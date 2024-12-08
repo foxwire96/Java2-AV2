@@ -1,0 +1,8 @@
+cd mysql 
+cd bin 
+mysql-u root -p
+show databases;
+create Database escola;
+use escola;
+show tables;
+select * from aluno;
