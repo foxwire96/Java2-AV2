@@ -17,6 +17,7 @@ public class AlterarAluno {
 		aluno.setNaturalidade("Brasileira");
 		aluno.setnome("Joana");
 		aluno.setEndereco("Avenida Brasil");
+        System.out.println("Aluno alterado com sucesso");
 		
 		EntityManagerFactory factory = Persistence.createEntityManagerFactory("alunos");
 		EntityManager manager = factory.createEntityManager();

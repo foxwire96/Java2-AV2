@@ -28,7 +28,7 @@ public class Aluno {
 		this.id = id;
 	}
 	public String getnome() {
-		return getnome();
+		return nome;
 	}
 	public void setnome(String nome) {
 		this.setNome(nome);
@@ -63,9 +63,7 @@ public class Aluno {
 	public void setEndereco(String endereco) {
 		this.endereco = endereco;
 	}
-	public String getNome() {
-		return nome;
-	}
+
 	public void setNome(String nome) {
 		this.nome = nome;
 	}

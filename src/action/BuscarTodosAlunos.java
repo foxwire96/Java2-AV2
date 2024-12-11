@@ -24,6 +24,11 @@ public class BuscarTodosAlunos {
 		System.out.println("Alunos cadastrados");
 		for (Aluno a : listaAlunos) {
 			System.out.println("Aluno: "+a.getnome());
+			System.out.println("CPF: "+a.getCpf());
+			System.out.println("Data de Nascimento"+a.getnascimento());
+			System.out.println("Naturalidade: "+a.getNaturalidade());
+			System.out.println("Endereço: "+a.getEndereco());
+			System.out.println("Email: "+a.getEmail());
 		}
 		
 		manager.close();

@@ -9,8 +9,7 @@ import modelo.Aluno;
 public class ExcluirAluno {
 
 	public static void main(String[] args) {
-		String alunos = null;
-		EntityManagerFactory factory = Persistence.createEntityManagerFactory(alunos);
+		EntityManagerFactory factory = Persistence.createEntityManagerFactory("alunos");
 		EntityManager manager = factory.createEntityManager();
 		
 		Aluno a1 = new Aluno();

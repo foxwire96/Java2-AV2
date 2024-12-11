@@ -26,7 +26,7 @@ public class InserirAlunoTeste {
         String endereco = sc.nextLine();
         Aluno aluno = new Aluno();
         
-        aluno.setNome(nome);
+        aluno.setnome(nome);
         aluno.setEmail(email);
         aluno.setCpf(cpf);
         aluno.setnascimento(nascimento);
@@ -43,6 +43,9 @@ public class InserirAlunoTeste {
 		manager.getTransaction().begin();
 		manager.persist(aluno);
 		manager.getTransaction().commit();
+		
+		manager.close();
+		factory.close();
 		
 		System.out.println("Aluno inserido, ID: "+aluno.getId());
     }
